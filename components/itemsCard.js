@@ -29,7 +29,7 @@ const ItemsCard = ({ item }) => {
 
   return (
     <div className={styles.itemCard}>
-      <h2>{item.category}</h2>
+      <h2>{item.category}</h2>   
       
       {/* Contenedor con funcionalidad de arrastre */}
       <div className={styles.tableContainer} ref={tableContainerRef} onMouseDown={handleMouseDown}>
@@ -46,6 +46,7 @@ const ItemsCard = ({ item }) => {
               <th>DEF Mágica</th>
               <th>Precisión</th>
               <th>Evasión</th>
+              {item.category === "Weapons" ? <th>Una mano</th> : null}
               <th>Usable By</th>
             </tr>
           </thead>
@@ -62,6 +63,7 @@ const ItemsCard = ({ item }) => {
                 <td>{itm.stats.defmagica}</td>
                 <td>{itm.stats.precision}</td>
                 <td>{itm.stats.evasion}</td>
+                {item.category === "Weapons" ? <td>{itm.onehand ? "Si" : "No"}</td> : null}
                 <td>{itm.usableBy.join(", ")}</td>
               </tr>
             ))}
