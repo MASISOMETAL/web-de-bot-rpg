@@ -1,0 +1,33 @@
+.skillCard {
+  margin: 20px 0;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 15px;
+  background-color: rgba(139, 69, 19, 0.05);
+}
+
+.tableContainer {
+  overflow-x: auto;
+  max-width: 100%;
+  cursor: grab; /* Cursor de arrastre */
+}
+
+.tableContainer:active {
+  cursor: grabbing;
+}
+
+.skillTable {
+  width: max-content;
+  border-collapse: collapse;
+}
+
+.skillTable th, .skillTable td {
+  border: 1px solid var(--border-color);
+  padding: 8px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.skillTable th {
+  background-color: rgba(139, 69, 19, 0.1);
+}

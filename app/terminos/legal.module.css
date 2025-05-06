@@ -1,0 +1,112 @@
+.legalContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.legalHeader {
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.backLink {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: var(--primary-color);
+  font-family: "Cinzel", serif;
+  transition: color 0.3s;
+}
+
+.backLink:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.legalTitle {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.legalContent {
+  flex: 1;
+}
+
+.parchment {
+  background-color: #f8f4e5;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.parchment::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+  border-radius: 8px 8px 0 0;
+}
+
+.parchment h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.parchment h3 {
+  font-size: 1.4rem;
+  margin: 25px 0 15px;
+  color: var(--secondary-color);
+}
+
+.parchment p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.parchment ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.parchment li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.parchment li::before {
+  content: "⚔️";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.legalFooter {
+  margin-top: 40px;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.footerLink {
+  color: var(--primary-color);
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.footerLink:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}

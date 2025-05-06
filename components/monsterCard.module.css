@@ -1,0 +1,43 @@
+.monsterCard {
+  margin: 20px 0;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  color: var(--primary-color);
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.containerImg {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerImg img {
+  width: 100%;
+}
+
+.containerInfo {
+  flex: 2;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  padding: 0.5rem;
+  color: white;
+}
+
+.containerName {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.containerStats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  font-size: .9rem;
+}

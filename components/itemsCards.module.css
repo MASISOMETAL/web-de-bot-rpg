@@ -1,0 +1,25 @@
+.itemCard {
+  margin-bottom: 1rem;
+}
+
+.tableContainer {
+  overflow-x: auto;
+  max-width: 100%;
+  cursor: grab; /* Indica que se puede arrastrar */
+}
+
+.tableContainer:active {
+  cursor: grabbing; /* Cambia al arrastrar */
+}
+
+.itemTable {
+  width: max-content;
+  border-collapse: collapse;
+}
+
+.itemTable th, .itemTable td {
+  border: 1px solid var(--border-color);
+  padding: 8px;
+  text-align: center;
+  white-space: nowrap;
+}

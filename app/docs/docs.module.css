@@ -1,0 +1,342 @@
+/* Añadir estos estilos al principio del archivo */
+.docsContainer {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 280px;
+  background-color: #f0e6d2;
+  border-right: 2px solid var(--border-color);
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebarHeader {
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+  font-family: "Cinzel", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  display: block;
+}
+
+.navigation {
+  padding: 20px 0;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+  margin-left: 280px;
+  width: calc(100% - 280px);
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .docsContainer {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 2px solid var(--border-color);
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.docPage {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.docTitle {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+  text-align: center;
+  position: relative;
+}
+
+.docTitle::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: var(--accent-color);
+}
+
+.parchment {
+  background-color: #f8f4e5;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.parchment::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+  border-radius: 8px 8px 0 0;
+}
+
+.parchment h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.parchment h3 {
+  font-size: 1.4rem;
+  margin: 25px 0 15px;
+  color: var(--secondary-color);
+}
+
+.parchment p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.featureList {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.featureList li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.featureList li::before {
+  content: "⚔️";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.callout {
+  background-color: rgba(205, 133, 63, 0.1);
+  border-left: 4px solid var(--accent-color);
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.callout h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.link {
+  color: var(--primary-color);
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--accent-color);
+}
+
+.category {
+  margin-bottom: 10px;
+}
+
+.categoryButton {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.categoryButton:hover {
+  background-color: rgba(139, 69, 19, 0.1);
+}
+
+.categoryButton span {
+  margin-left: 8px;
+}
+
+.navLink {
+  display: block;
+  padding: 10px 20px 10px 40px;
+  color: var(--text-color);
+  transition: all 0.3s;
+  border-left: 3px solid transparent;
+  background: none;
+  border: none;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.navLink:hover,
+.navLink.active {
+  background-color: rgba(139, 69, 19, 0.1);
+  border-left-color: var(--accent-color);
+}
+
+.navLink.active {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.sidebarFooter {
+  padding: 20px;
+  border-top: 1px solid var(--border-color);
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebarFooterLink {
+  font-size: 0.8rem;
+  color: var(--text-color);
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.sidebarFooterLink:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.faqItem {
+  margin-bottom: 25px;
+}
+
+.faqItem h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.commandTable {
+  margin: 20px 0;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.commandRow {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.commandRow:last-child {
+  border-bottom: none;
+}
+
+.commandName {
+  flex: 0 0 40%;
+  padding: 12px 15px;
+  background-color: rgba(139, 69, 19, 0.05);
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+}
+
+.commandDesc {
+  flex: 0 0 60%;
+  padding: 12px 15px;
+}
+
+.codeBlock {
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: "Courier New", monospace;
+  margin: 20px 0;
+  overflow-x: auto;
+}
+
+.rarityTable,
+.monsterCard,
+.itemCard,
+.spellCard {
+  margin: 20px 0;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.rarityRow {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.rarityRow:last-child {
+  border-bottom: none;
+}
+
+.rarityName {
+  flex: 0 0 30%;
+  padding: 12px 15px;
+  font-weight: bold;
+}
+
+.rarityDesc {
+  flex: 0 0 70%;
+  padding: 12px 15px;
+}
+
+.monsterCard,
+.itemCard,
+.spellCard {
+  padding: 15px;
+  background-color: rgba(139, 69, 19, 0.05);
+  margin-bottom: 15px;
+}
+
+.monsterCard h4,
+.itemCard h4,
+.spellCard h4 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.monsterCard p,
+.itemCard p,
+.spellCard p {
+  margin-bottom: 5px;
+}
