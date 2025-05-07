@@ -12,7 +12,17 @@ export const changelogs = [
     cambios: [
       "Se agregó comando /personaje_de [@usuario], permitiendo ver el perfil de otro usuario",
       "Se cambiaron los comandos en ingles a castellano (/attack a /ataque, /mi_skill a /mis_habilidades, /shop a /tienda",
-      "Se agregó comando /kit [codigo] para regalar kits a los admin de servidores unicos para su gente"
+      "Se agregó comando /kit [codigo] para regalar kits a los admin de servidores unicos para su gente",
+      "Se agrego una opción al comando /rank para ver ranking global o del server"
+    ]
+  },
+  {
+    id: 3,
+    fecha: "07/05/2025",
+    cambios: [
+      "Se ajustaron los stats de algunos mobs",
+      "Se subio la exp recibida",
+      "Se aumento la posibilidad de drop de item a 40% al matar a un monstruo",
     ]
   },
 ]
