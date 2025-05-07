@@ -31,8 +31,8 @@ export default function Informacion() {
           </div>
 
           <div className={styles.commandRow}>
-            <div className={styles.commandName}>/rank</div>
-            <div className={styles.commandDesc}>Muestra el ranking de los personajes de Dungeon RPG.</div>
+            <div className={styles.commandName}>/rank [global o server]</div>
+            <div className={styles.commandDesc}>Muestra el ranking de los personajes de Dungeon RPG o del servidor en el que se ejecuta.</div>
           </div>
 
           <div className={styles.commandRow}>
