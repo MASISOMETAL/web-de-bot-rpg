@@ -25,4 +25,13 @@ export const changelogs = [
       "Se aumento la posibilidad de drop de item a 40% al matar a un monstruo",
     ]
   },
+  {
+    id: 4,
+    fecha: "09/05/2025",
+    cambios: [
+      "Se agregaron cajas de hierro, bronce, plata, que tiran items segun sus niveles",
+      "Se modificaron los stats de algunos items",
+      "Se moificó el hp de algunos monstruos",
+    ]
+  },
 ]
