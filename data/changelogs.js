@@ -34,4 +34,11 @@ export const changelogs = [
       "Se moificó el hp de algunos monstruos",
     ]
   },
+  {
+    id: 5,
+    fecha: "10/05/2025",
+    cambios: [
+      "Se aumentó a un 60% la probabilidad de drop de item",
+    ]
+  },
 ]
