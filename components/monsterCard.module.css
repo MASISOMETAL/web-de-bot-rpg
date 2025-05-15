@@ -41,3 +41,17 @@
   gap: 1rem;
   font-size: .9rem;
 }
+
+@media (max-width: 640px) {
+  .monsterCard {
+    flex-direction: column;
+  }
+
+  .containerName {
+  font-size: 1.2rem;
+}
+
+.containerStats {
+  font-size: .7rem;
+}
+}
