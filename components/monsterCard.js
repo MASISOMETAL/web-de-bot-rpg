@@ -34,13 +34,10 @@ const MonsterCard = ({ monster }) => {
             <strong>Def. Mágica:</strong> {monster.stats.defmagica}
           </p>
           <p>
-            <strong>Def. Física:</strong> {monster.stats.precision}
+            <strong>Presición:</strong> {monster.stats.precision}
           </p>
           <p>
-            <strong>Presición:</strong> {monster.stats.evasion}
-          </p>
-          <p>
-            <strong>Evasion:</strong> {monster.stats.hp}
+            <strong>Evasion:</strong> {monster.stats.evasion}
           </p>
         </div>
       </div>
