@@ -41,4 +41,12 @@ export const changelogs = [
       "Se aumentó a un 60% la probabilidad de drop de item",
     ]
   },
+  {
+    id: 5,
+    fecha: "16/05/2025",
+    cambios: [
+      "Se agrego Fire Cube a los monstruos",
+      "Se aumento el daño del skill del arqueto Disparo Preciso de 120 a 150",
+    ]
+  },
 ]
