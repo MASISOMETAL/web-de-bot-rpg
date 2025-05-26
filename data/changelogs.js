@@ -42,11 +42,19 @@ export const changelogs = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     fecha: "16/05/2025",
     cambios: [
       "Se agrego Fire Cube a los monstruos",
       "Se aumento el daño del skill del arqueto Disparo Preciso de 120 a 150",
+    ]
+  },
+  {
+    id: 7,
+    fecha: "26/05/2025",
+    cambios: [
+      "Se aumentó la experiencia ganada de 2% a 5%.",
+      "Se aumentó el oro ganado de 5% a 6%.",
     ]
   },
 ]
